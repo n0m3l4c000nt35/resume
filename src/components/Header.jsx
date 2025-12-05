@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Header({ t, language, setLanguage }) {
   return (
     <header className="header">
@@ -11,7 +13,9 @@ export default function Header({ t, language, setLanguage }) {
         {t.header.phone}: +54 11 2277 1652 | {t.header.location}
       </div>
       <div className="language-selector">
-        <span className="language-label">Language:</span>
+        <span className="language-label">
+          {language === "en" ? "Language:" : "Idioma:"}
+        </span>
         <a
           href="#"
           onClick={e => {
@@ -20,7 +24,7 @@ export default function Header({ t, language, setLanguage }) {
           }}
           className={`language-link ${language === "en" ? "active" : ""}`}
         >
-          [English]
+          [{language === "en" ? "english" : "inglés"}]
         </a>
         <a
           href="#"
@@ -30,7 +34,7 @@ export default function Header({ t, language, setLanguage }) {
           }}
           className={`language-link ${language === "es" ? "active" : ""}`}
         >
-          [Español]
+          [{language === "en" ? "spanish" : "español"}]
         </a>
       </div>
     </header>

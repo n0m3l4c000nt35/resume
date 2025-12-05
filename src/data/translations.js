@@ -1,3 +1,12 @@
+// HTB Academy Progress Variables
+const HTB_GENERAL = 75;
+const HTB_OFFENSIVE = 24;
+const HTB_DEFENSIVE = 3;
+const HTB_MACHINES = 162;
+
+// Resume filename
+export const RESUME_FILENAME = 'esteban_zarate.pdf';
+
 export const translations = {
   en: {
     header: {
@@ -9,17 +18,16 @@ export const translations = {
     nav: {
       about: 'About',
       education: 'Education',
+      projects: 'Projects',
       skills: 'Skills',
       links: 'Links'
     },
     sections: {
       about: {
         title: 'About Esteban Zárate',
-        content: `
-Passionate about development and cybersecurity, which allow me to satisfy my constant desire for learning, continue developing a creative and problem-solving mindset, aspects that I highlight about myself and enjoy continuing to perfect.
+        content: `Passionate about development and cybersecurity, which allow me to satisfy my constant desire for learning, continue developing a creative and problem-solving mindset, aspects that I highlight about myself and enjoy continuing to perfect.
 
-Currently expanding my skillset through continuous learning at Hack The Box Academy and various development courses. I enjoy tackling challenges that push the boundaries of what I know.
-        `.trim()
+Currently expanding my skillset through continuous learning at Hack The Box Academy and various development courses. I enjoy tackling challenges that push the boundaries of what I know.`
       },
       education: {
         title: 'Education & Training',
@@ -41,15 +49,39 @@ Currently expanding my skillset through continuous learning at Hack The Box Acad
 
 [Hack The Box]
   Continuous hands-on cybersecurity training and practice
-  • Academy Progress: General 75%, Offensive 24%, Defensive 3%
-  • Practical Experience: 162 machines solved
-  • Skills: Penetration testing, vulnerability assessment, CTF challenges
+  • Academy Progress: General ${HTB_GENERAL}%, Offensive ${HTB_OFFENSIVE}%, Defensive ${HTB_DEFENSIVE}%
+  • Practical Experience: ${HTB_MACHINES} machines solved
+
+[Hack4u]
+  • Offensive Python
+  • Introduction to Hacking
+  • Introduction to Linux
 
 [Coderhouse]
   • Full Stack Web Development
   • React.js, Node.js, Express.js, MongoDB
   • Python & Django
   • React Native
+        `.trim()
+      },
+      projects: {
+        title: 'Projects',
+        content: `
+[Custom Kali Linux with HTBash]
+  Guide for installing and customizing Kali Linux for pentesting and Hack The Box
+  https://github.com/n0m3l4c000nt35/custom-kali-linux
+
+[App Notes]
+  Full stack notes application built with Next.js 15, React and MongoDB
+  https://github.com/n0m3l4c000nt35/app-notes
+
+[Urlfckr]
+  Web crawler to discover subdomains and internal paths from websites
+  https://github.com/n0m3l4c000nt35/urlfckr
+
+[infosecmachines]
+  Bash script to list and filter solved machines by S4vitar for Hack4u community
+  https://github.com/n0m3l4c000nt35/infosecmachines
         `.trim()
       },
       skills: {
@@ -65,11 +97,11 @@ Currently expanding my skillset through continuous learning at Hack The Box Acad
   MongoDB • SQL
 
 [Development Tools]
-  Git • GitHub • Linux • bash • Docker
+  Git • GitHub • Linux • Bash • Docker
 
 [Security & Penetration Testing]
-  Burpsuite • nmap • Metasploit • Wireshark Hydra
-  John the Ripper • SQLmap • Gobuster • OWASP ZAP
+  Burpsuite • nmap • Metasploit • Wireshark
+  Hydra • John the Ripper • Gobuster
         `.trim()
       },
       links: {
@@ -81,6 +113,9 @@ Currently expanding my skillset through continuous learning at Hack The Box Acad
 [Portfolio]
   https://n0m3l4c000nt35.github.io/portfolio/
 
+[Blog]
+  https://estebanzarate.gitbook.io/hackache/
+
 [Hack The Box]
   https://app.hackthebox.com/profile/1089152
 
@@ -91,7 +126,7 @@ Currently expanding my skillset through continuous learning at Hack The Box Acad
   estebanzarateok@gmail.com
 
 [Resume]
-  Download PDF
+  /${RESUME_FILENAME}
         `.trim()
       }
     },
@@ -109,17 +144,16 @@ Currently expanding my skillset through continuous learning at Hack The Box Acad
     nav: {
       about: 'Sobre mí',
       education: 'Educación',
+      projects: 'Proyectos',
       skills: 'Habilidades',
       links: 'Enlaces'
     },
     sections: {
       about: {
         title: 'Sobre Esteban Zárate',
-        content: `
-Apasionado por el desarrollo y la ciberseguridad, los que me permiten satisfacer el constante deseo de aprendizaje, continuar desarrollando una mentalidad creativa y resolutiva, aspectos que destaco de mi persona y disfruto seguir perfeccionando.
+        content: `Apasionado por el desarrollo y la ciberseguridad, los que me permiten satisfacer el constante deseo de aprendizaje, continuar desarrollando una mentalidad creativa y resolutiva, aspectos que destaco de mi persona y disfruto seguir perfeccionando.
 
-Actualmente expandiendo mis habilidades mediante aprendizaje continuo en Hack The Box Academy y varios cursos de desarrollo. Disfruto enfrentar desafíos que empujan los límites de lo que sé.
-        `.trim()
+Actualmente expandiendo mis habilidades mediante aprendizaje continuo en Hack The Box Academy y varios cursos de desarrollo. Disfruto enfrentar desafíos que empujan los límites de lo que sé.`
       },
       education: {
         title: 'Educación y Formación',
@@ -141,15 +175,39 @@ Actualmente expandiendo mis habilidades mediante aprendizaje continuo en Hack Th
 
 [Hack The Box]
   Formación y práctica continua en ciberseguridad
-  • Progreso en Academia: General 75%, Ofensiva 24%, Defensiva 3%
-  • Experiencia Práctica: 162 máquinas resueltas
-  • Habilidades: Pruebas de penetración, evaluación de vulnerabilidades, desafíos CTF
+  • Progreso en Academia: General ${HTB_GENERAL}%, Ofensiva ${HTB_OFFENSIVE}%, Defensiva ${HTB_DEFENSIVE}%
+  • Experiencia Práctica: ${HTB_MACHINES} máquinas resueltas
+
+[Hack4u]
+  • Python Ofensivo
+  • Introducción al Hacking
+  • Introducción a Linux
 
 [Coderhouse]
   • Desarrollo Web Full Stack
   • React.js, Node.js, Express.js, MongoDB
   • Python y Django
   • React Native
+        `.trim()
+      },
+      projects: {
+        title: 'Proyectos',
+        content: `
+[Custom Kali Linux with HTBash]
+  Guía para instalar y personalizar Kali Linux para pentesting y Hack The Box
+  https://github.com/n0m3l4c000nt35/custom-kali-linux
+
+[App Notes]
+  Aplicación full stack de notas construida con Next.js 15, React y MongoDB
+  https://github.com/n0m3l4c000nt35/app-notes
+
+[Urlfckr]
+  Web crawler para descubrir subdominios y rutas internas de sitios web
+  https://github.com/n0m3l4c000nt35/urlfckr
+
+[infosecmachines]
+  Script en bash para listar y filtrar máquinas resueltas por S4vitar para la comunidad de Hack4u
+  https://github.com/n0m3l4c000nt35/infosecmachines
         `.trim()
       },
       skills: {
@@ -165,21 +223,24 @@ Actualmente expandiendo mis habilidades mediante aprendizaje continuo en Hack Th
   MongoDB • SQL
 
 [Herramientas de Desarrollo]
-  Git • GitHub • Linux • bash • Docker
+  Git • GitHub • Linux • Bash • Docker
 
-[Seguridad y Pruebas de Penetración]
-  Burpsuite • nmap • Metasploit • Wireshark • Hydra
-  John the Ripper • SQLmap • Gobuster • OWASP ZAP
+[Security & Penetration Testing]
+  Burpsuite • nmap • Metasploit • Wireshark
+  Hydra • John the Ripper • Gobuster
         `.trim()
       },
       links: {
-        title: 'Encontrame en línea',
+        title: 'Encontrame en Línea',
         content: `
 [GitHub]
   https://github.com/n0m3l4c000nt35
 
 [Portfolio]
   https://n0m3l4c000nt35.github.io/portfolio/
+
+[Blog]
+  https://estebanzarate.gitbook.io/hackache/
 
 [Hack The Box]
   https://app.hackthebox.com/profile/1089152
@@ -191,7 +252,7 @@ Actualmente expandiendo mis habilidades mediante aprendizaje continuo en Hack Th
   estebanzarateok@gmail.com
 
 [Currículum]
-  Descargar PDF
+  /${RESUME_FILENAME}
         `.trim()
       }
     },

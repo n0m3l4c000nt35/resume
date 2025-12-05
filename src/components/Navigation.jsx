@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Navigation({ t, activeSection, setActiveSection }) {
   const sections = Object.keys(t.sections);
 

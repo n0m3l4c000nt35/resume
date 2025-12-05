@@ -194,23 +194,6 @@ em.star {
   margin-top: 1.5em;
 }
 
-.download-button {
-  display: inline-block;
-  padding: 0.5em 1em;
-  border: 1px solid #009900;
-  border-radius: 3px;
-  color: #009900;
-  background-color: #10101a;
-  transition: all 0.2s;
-}
-
-.download-button:hover,
-.download-button:focus {
-  background-color: #1e1e46;
-  color: #99ff99;
-  border-color: #99ff99;
-}
-
 /* Footer */
 .footer {
   margin-top: 2em;
@@ -229,4 +212,9 @@ em.star {
 .footer a:hover,
 .footer a:focus {
   color: #99ff99;
+}
+
+.footer-name {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff;
 }
