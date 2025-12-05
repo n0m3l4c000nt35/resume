@@ -14,7 +14,7 @@ export default function Content({ t, activeSection, language }) {
         {activeSection === "links" && (
           <div className="download-section">
             <a
-              href="/resume.pdf"
+              href="/esteban_zarate.pdf"
               download="Esteban_Zarate_Resume.pdf"
               className="download-button"
             >
