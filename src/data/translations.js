@@ -67,6 +67,10 @@ Currently expanding my skillset through continuous learning at Hack The Box Acad
       projects: {
         title: 'Projects',
         content: `
+[Cyber Bloodline]
+  Social network simulating a command line terminal
+  https://github.com/n0m3l4c000nt35/cyber-bloodline
+
 [Custom Kali Linux with HTBash]
   Guide for installing and customizing Kali Linux for pentesting and Hack The Box
   https://github.com/n0m3l4c000nt35/custom-kali-linux
@@ -193,6 +197,10 @@ Actualmente expandiendo mis habilidades mediante aprendizaje continuo en Hack Th
       projects: {
         title: 'Proyectos',
         content: `
+[Cyber Bloodline]
+  Red social simulando una terminal de comandos
+  https://github.com/n0m3l4c000nt35/cyber-bloodline
+  
 [Custom Kali Linux with HTBash]
   Guía para instalar y personalizar Kali Linux para pentesting y Hack The Box
   https://github.com/n0m3l4c000nt35/custom-kali-linux
